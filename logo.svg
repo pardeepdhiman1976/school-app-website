@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+<title id="title">School App logo</title>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#168C83"/>
+    <stop offset="1" stop-color="#123C3A"/>
+  </linearGradient>
+</defs>
+<rect x="3" y="3" width="90" height="90" rx="25" fill="url(#g)"/>
+<path d="M19 32.5c10-4.5 20-3.2 29 3.5v35c-9-6.7-19-8-29-3.5z" fill="#fff" opacity=".98"/>
+<path d="M77 32.5c-10-4.5-20-3.2-29 3.5v35c9-6.7 19-8 29-3.5z" fill="#D5FFF4"/>
+<path d="M48 36v35" stroke="#168C83" stroke-width="3" stroke-linecap="round"/>
+<path d="M25 44c6-2 12-1.2 17 2M25 53c6-2 12-1.2 17 2M71 44c-6-2-12-1.2-17 2M71 53c-6-2-12-1.2-17 2" fill="none" stroke="#168C83" stroke-width="2.6" stroke-linecap="round" opacity=".7"/>
+<path d="M68 15l2.8 6.2L77 24l-6.2 2.8L68 33l-2.8-6.2L59 24l6.2-2.8z" fill="#FF8066"/>
+</svg>
