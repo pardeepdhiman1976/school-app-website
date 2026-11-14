@@ -214,3 +214,13 @@ footer p {
         font-size: 28px;
     }
 }
+
+
+/* Features page heading */
+.features h2 {
+    color: #102a56;
+}
+
+.features p {
+    color: #344054;
+}
