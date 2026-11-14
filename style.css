@@ -229,7 +229,6 @@ body.features-page .hero p {
 }
 
 /* HOMEPAGE HERO HEADING */
-body:not(.features-page) .hero h2 {
-    color: #ffffff;
+body.features-page .hero h2 {
+    color: #ffffff !important;
 }
-
