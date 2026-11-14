@@ -217,20 +217,19 @@ footer p {
 
 
 
-/* FEATURES PAGE - HEADING COLOUR FIX */
 
-.features h2,
-.hero.features h2,
-section.features h2 {
+/* FEATURES PAGE HEADING */
+body.features-page .hero h2 {
     color: #102a56 !important;
 }
 
-.features p {
+/* FEATURES PAGE PARAGRAPH */
+body.features-page .hero p {
     color: #344054;
 }
 
-/* White heading only on the homepage hero */
-.hero:not(.features) h2 {
+/* HOMEPAGE HERO HEADING */
+body:not(.features-page) .hero h2 {
     color: #ffffff;
 }
 
