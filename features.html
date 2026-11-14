@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Features |  Android School Application</title>
+    <title>Features |  School App</title>
 
     <meta name="description" content="Explore School App features for school and preschool management.">
 
@@ -15,7 +15,7 @@
 <body class="features-page">
 
 <header>
-    <h1> Android School Application</h1>
+    <h1>School App</h1>
 <nav>
     <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
     <a href="features.html"><span class="nav-icon">✨</span> Features</a>
@@ -130,6 +130,22 @@
     <p>School & Preschool Management Software</p>
     <p>© 2026 School App. All Rights Reserved.</p>
 </footer>
+
+
+<script>
+// Highlight the current page and gently reveal content as visitors scroll.
+document.querySelectorAll('nav a').forEach(link => {
+  if (link.getAttribute('href') === location.pathname.split('/').pop()) link.classList.add('active');
+});
+const revealItems = document.querySelectorAll('main section, .card');
+revealItems.forEach(item => item.classList.add('reveal'));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+  }, { threshold: 0.08 });
+  revealItems.forEach(item => observer.observe(item));
+} else { revealItems.forEach(item => item.classList.add('visible')); }
+</script>
 
 </body>
 </html>

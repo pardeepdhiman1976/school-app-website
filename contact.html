@@ -1,11 +1,10 @@
-\
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us |  Android School Application</title>
+    <title>Contact Us |  School App</title>
 
     <meta name="description" content="Contact School App to discuss school and preschool management software.">
 
@@ -15,7 +14,7 @@
 <body>
 
 <header>
-    <h1> Android School Application</h1>
+    <h1>School App</h1>
 
 <nav>
     <a href="index.html"><span class="nav-icon">🏠</span> Home</a>
@@ -188,6 +187,22 @@
             "mailto:pardeep.dhiman@gmail.com?subject=" +
             subject + "&body=" + body;
     });
+</script>
+
+
+<script>
+// Highlight the current page and gently reveal content as visitors scroll.
+document.querySelectorAll('nav a').forEach(link => {
+  if (link.getAttribute('href') === location.pathname.split('/').pop()) link.classList.add('active');
+});
+const revealItems = document.querySelectorAll('main section, .card');
+revealItems.forEach(item => item.classList.add('reveal'));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+  }, { threshold: 0.08 });
+  revealItems.forEach(item => observer.observe(item));
+} else { revealItems.forEach(item => item.classList.add('visible')); }
 </script>
 
 </body>
