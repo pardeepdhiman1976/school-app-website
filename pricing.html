@@ -2,220 +2,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pricing | School App</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta name="description" content="Explore flexible School App plans for schools and preschools. Request a personalised quotation.">
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #243047;
-            line-height: 1.6;
-        }
-
-        header {
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px #00000010;
-        }
-
-        .logo {
-            font-size: 27px;
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #243047;
-            margin-left: 18px;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: #eaf2ff;
-            text-align: center;
-            padding: 65px 8%;
-        }
-
-        .hero h1 {
-            font-size: 40px;
-            margin-bottom: 12px;
-        }
-
-        .hero p {
-            color: #64748b;
-            font-size: 18px;
-        }
-
-        .container {
-            padding: 60px 8%;
-            text-align: center;
-        }
-
-        .plans {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
-            margin-top: 35px;
-        }
-
-        .plan {
-            border: 1px solid #dbe3ef;
-            border-radius: 12px;
-            padding: 30px 22px;
-            background: white;
-        }
-
-        .plan h2 {
-            color: #2563eb;
-            margin-bottom: 15px;
-        }
-
-        .plan p {
-            color: #64748b;
-            margin-bottom: 15px;
-        }
-
-        .plan ul {
-            list-style: none;
-            margin: 20px 0;
-        }
-
-        .plan li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eef2f7;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-
-        .note {
-            margin-top: 35px;
-            color: #64748b;
-        }
-
-        footer {
-            background: #172554;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media(max-width: 650px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="logo">School App</div>
+    <h1>School App</h1>
 
     <nav>
         <a href="index.html">Home</a>
         <a href="features.html">Features</a>
         <a href="about.html">About Us</a>
         <a href="pricing.html">Pricing</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<div class="hero">
-    <h1>Simple & Flexible Pricing</h1>
-    <p>Find the right School App plan for your institution.</p>
-</div>
+<main>
 
-<div class="container">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
 
-    <h2>Choose Your Plan</h2>
+            <p style="color: #ffffff !important;">
+                FLEXIBLE PLANS FOR EVERY INSTITUTION
+            </p>
 
-    <div class="plans">
+            <h2 style="color: #ffffff !important;">
+                Simple & Flexible Pricing
+            </h2>
 
-        <div class="plan">
-            <h2>Preschool</h2>
-            <p>For preschools and early learning centres.</p>
+            <p style="color: #ffffff !important;">
+                Find the right School App solution
+                for your school or preschool.
+            </p>
 
-            <ul>
-                <li>Student Management</li>
-                <li>Teacher Management</li>
-                <li>Calendar Management</li>
-                <li>Centralised Records</li>
-            </ul>
+            <a href="contact.html" class="btn">Request a Quotation</a>
 
-            <a href="index.html#contact" class="btn">Request Pricing</a>
         </div>
+    </section>
 
-        <div class="plan">
-            <h2>School</h2>
-            <p>For schools of different sizes.</p>
+    <!-- PRICING PLANS -->
+    <section class="features">
+        <div class="container">
 
-            <ul>
-                <li>Student Management</li>
-                <li>Teacher Management</li>
-                <li>Calendar Management</li>
-                <li>Centralised Records</li>
-            </ul>
+            <h2>Choose Your Plan</h2>
 
-            <a href="index.html#contact" class="btn">Request Pricing</a>
+            <p>
+                Flexible options based on your institution's needs.
+            </p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>🧸 Preschool Plan</h3>
+
+                    <p>
+                        Designed for preschools and
+                        early learning centres.
+                    </p>
+
+                    <ul>
+                        <li>Student Management</li>
+                        <li>Teacher Management</li>
+                        <li>Calendar Management</li>
+                        <li>Centralised Records</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn">
+                        Request Pricing
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>🏫 School Plan</h3>
+
+                    <p>
+                        Designed for schools of
+                        different sizes.
+                    </p>
+
+                    <ul>
+                        <li>Student Management</li>
+                        <li>Teacher Management</li>
+                        <li>Calendar Management</li>
+                        <li>Centralised Records</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn">
+                        Request Pricing
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>⚙️ Custom Plan</h3>
+
+                    <p>
+                        For institutions requiring
+                        a customised solution.
+                    </p>
+
+                    <ul>
+                        <li>Discuss Your Requirements</li>
+                        <li>Customised Configuration</li>
+                        <li>Feature Discussion</li>
+                        <li>Personalised Quotation</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn">
+                        Contact Sales
+                    </a>
+                </div>
+
+            </div>
+
         </div>
+    </section>
 
-        <div class="plan">
-            <h2>Custom</h2>
-            <p>For institutions needing a customised solution.</p>
+    <!-- PRICING INFORMATION -->
+    <section>
+        <div class="container">
 
-            <ul>
-                <li>Discuss Your Requirements</li>
-                <li>Customised Configuration</li>
-                <li>Feature Discussion</li>
-                <li>Personalised Quotation</li>
-            </ul>
+            <h2>Pricing That Fits Your Institution</h2>
 
-            <a href="index.html#contact" class="btn">Contact Sales</a>
+            <p>
+                Every school and preschool has different
+                requirements. Contact our team to discuss
+                your needs and receive a suitable quotation.
+            </p>
+
+            <a href="contact.html" class="btn">
+                Get a Personalised Quote
+            </a>
+
         </div>
+    </section>
 
-    </div>
+    <!-- CALL TO ACTION -->
+    <section class="highlight">
+        <div class="container">
 
-    <p class="note">
-        Pricing will be shared based on your institution's requirements.
-        Contact us for a quotation.
+            <h2>Ready to Get Started?</h2>
+
+            <p>
+                Talk to us about bringing School App
+                to your institution.
+            </p>
+
+            <a href="contact.html" class="btn">
+                Contact Our Team
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <h2 style="color: #ffffff;">School App</h2>
+
+    <p>School & Preschool Management Software</p>
+
+    <p>
+        <a href="index.html" style="color: white;">Home</a> |
+        <a href="features.html" style="color: white;">Features</a> |
+        <a href="about.html" style="color: white;">About Us</a> |
+        <a href="pricing.html" style="color: white;">Pricing</a> |
+        <a href="contact.html" style="color: white;">Contact</a>
     </p>
 
-</div>
-
-<footer>
     <p>© 2026 School App. All Rights Reserved.</p>
-    <p>School & Preschool Management Software</p>
 </footer>
 
 </body>
