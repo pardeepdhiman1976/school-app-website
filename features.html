@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | School App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #243047;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #243047;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #eaf2ff;
+            text-align: center;
+            padding: 75px 8%;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #58657a;
+            font-size: 18px;
+        }
+
+        .container {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+            margin-top: 35px;
+        }
+
+        .card {
+            padding: 30px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .back {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            margin-top: 35px;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">School App</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Powerful Features</h1>
+    <p>Everything organised in one place for schools and preschools.</p>
+</div>
+
+<div class="container">
+    <h2>Explore School App</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>Student Management</h3>
+            <p>Maintain student records and organise important student information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Teacher Management</h3>
+            <p>Organise teacher and staff information in one place.</p>
+        </div>
+
+        <div class="card">
+            <h3>Calendar Management</h3>
+            <p>Keep important dates, events and activities organised.</p>
+        </div>
+
+        <div class="card">
+            <h3>Centralised Records</h3>
+            <p>Keep institutional information organised and accessible.</p>
+        </div>
+
+        <div class="card">
+            <h3>School Support</h3>
+            <p>A digital management platform for school administrators.</p>
+        </div>
+
+        <div class="card">
+            <h3>Preschool Support</h3>
+            <p>Manage information for preschool and early learning centres.</p>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back">Back to Home</a>
+</div>
+
+<footer>
+    <p>© 2026 School App. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
