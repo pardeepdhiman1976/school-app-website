@@ -1,0 +1,216 @@
+
+/* SCHOOL APP - Professional Website Design */
+
+:root {
+    --primary: #155eef;
+    --dark: #102a56;
+    --light: #f4f7fc;
+    --text: #344054;
+    --white: #ffffff;
+    --orange: #ff9f43;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+header {
+    background: var(--white);
+    padding: 16px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: var(--dark);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+section {
+    padding: 75px 8%;
+}
+
+h2 {
+    color: var(--dark);
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #102a56, #155eef);
+    color: white;
+    text-align: center;
+    padding: 110px 8%;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 46px;
+    max-width: 850px;
+    margin: 0 auto 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.btn, button {
+    display: inline-block;
+    background: var(--orange);
+    color: #102a56;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover, button:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.features {
+    background: var(--light);
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(16,42,86,0.08);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(16,42,86,0.13);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.highlight {
+    background: #eaf1ff;
+    text-align: center;
+}
+
+.highlight h2 {
+    color: var(--primary);
+}
+
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    display: grid;
+    gap: 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 7px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}

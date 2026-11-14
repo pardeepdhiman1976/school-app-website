@@ -4,223 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>School App | School & Preschool Management Software</title>
-    <meta name="description" content="School App helps schools and preschools manage their daily activities in one place.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #243047;
-            line-height: 1.6;
-        }
+    <meta name="description" content="School App helps schools and preschools organise student, staff and calendar information through one easy-to-use digital platform.">
 
-        header {
-            background: white;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px #00000010;
-        }
-
-        .logo {
-            font-size: 27px;
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #243047;
-            margin-left: 22px;
-            font-weight: 600;
-        }
-
-        .hero {
-            background: linear-gradient(120deg, #eaf2ff, #f4f0ff);
-            padding: 100px 8%;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 44px;
-            max-width: 850px;
-            margin: auto;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            margin: 22px auto;
-            max-width: 650px;
-            font-size: 18px;
-            color: #58657a;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 13px 28px;
-            border-radius: 7px;
-            text-decoration: none;
-            margin-top: 12px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 65px 8%;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .intro {
-            max-width: 700px;
-            margin: auto;
-            color: #64748b;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-            margin-top: 35px;
-        }
-
-        .feature {
-            padding: 28px;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            background: white;
-        }
-
-        .feature h3 {
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-
-        .audience {
-            background: #f8fafc;
-        }
-
-        footer {
-            background: #172554;
-            color: white;
-            padding: 30px 8%;
-            text-align: center;
-        }
-
-        @media(max-width: 650px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 0 8px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <div class="logo">School App</div>
+    <h1>School App</h1>
+
     <nav>
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="about.html">About</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="contact.html">Contact</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About Us</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<div class="hero" id="home">
-    <h1>Smarter Management for Schools & Preschools</h1>
-    <p>
-        Simplify your institution's daily work with School App.
-        Manage school information and stay organised with one
-        easy-to-use management platform.
-    </p>
-    <a href="#contact" class="btn">Contact Us</a>
-</div>
+<main>
 
-<section id="about">
-    <h2>Welcome to School App</h2>
-    <p class="intro">
-        School App is designed to help schools and preschools
-        organise their everyday management activities through
-        a simple digital platform.
-    </p>
-</section>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
 
-<section id="features">
-    <h2>Our Platform</h2>
-    <p class="intro">A central place for managing important institutional activities.</p>
+            <p>SMARTER EDUCATION MANAGEMENT</p>
 
-    <div class="features">
-        <div class="feature">
-            <h3>Student Management</h3>
-            <p>Organise and maintain student information.</p>
+            <h2>
+                One Platform to Manage
+                Your School & Preschool
+            </h2>
+
+            <p>
+                Simplify everyday institutional management.
+                Organise student records, staff information
+                and important calendar activities with School App.
+            </p>
+
+            <a href="contact.html" class="btn">Request a Demo</a>
+
+            <a href="features.html" class="btn">Explore Features</a>
+
         </div>
+    </section>
 
-        <div class="feature">
-            <h3>Staff Management</h3>
-            <p>Keep staff and teacher information organised.</p>
+    <!-- INTRODUCTION -->
+    <section>
+        <div class="container">
+
+            <h2>Welcome to School App</h2>
+
+            <p>
+                Managing an educational institution should be simple.
+                School App brings important management information
+                together in one convenient digital platform.
+            </p>
+
+            <p>
+                Designed for both schools and preschools,
+                our platform helps institutions stay organised
+                and manage their everyday information efficiently.
+            </p>
+
         </div>
+    </section>
 
-        <div class="feature">
-            <h3>Calendar & Events</h3>
-            <p>Keep track of important dates and activities.</p>
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="container">
+
+            <h2>Everything Important in One Place</h2>
+
+            <p>
+                Simple tools to help organise your institution.
+            </p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>👨‍🎓 Student Management</h3>
+                    <p>
+                        Organise and maintain student information
+                        in a centralised digital system.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>👩‍🏫 Staff Management</h3>
+                    <p>
+                        Keep teacher and staff information
+                        organised and accessible.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📅 Calendar & Events</h3>
+                    <p>
+                        Keep track of important dates,
+                        schedules and institutional activities.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📋 Organised Records</h3>
+                    <p>
+                        Bring important institutional information
+                        together through one digital platform.
+                    </p>
+                </div>
+
+            </div>
+
+            <br>
+
+            <a href="features.html" class="btn">View All Features</a>
+
         </div>
+    </section>
 
-        <div class="feature">
-            <h3>Easy Management</h3>
-            <p>Bring important daily information together in one place.</p>
+    <!-- WHO WE SERVE -->
+    <section>
+        <div class="container">
+
+            <h2>Designed for Every Learning Institution</h2>
+
+            <p>
+                Whether you manage a school or a preschool,
+                School App provides a convenient way to organise
+                your institution's information.
+            </p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>🏫 For Schools</h3>
+                    <p>
+                        Manage student information, staff records
+                        and important school activities in one place.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🧸 For Preschools</h3>
+                    <p>
+                        Keep preschool information organised
+                        with a simple and easy-to-use platform.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="audience">
-    <h2>Designed for Every Learning Institution</h2>
-    <div class="features">
-        <div class="feature">
-            <h3>Schools</h3>
-            <p>A digital management solution for schools.</p>
+    <!-- CALL TO ACTION -->
+    <section class="highlight">
+        <div class="container">
+
+            <h2>Ready to Make Management Simpler?</h2>
+
+            <p>
+                Discover how School App can support your
+                school or preschool.
+            </p>
+
+            <a href="contact.html" class="btn">Request a Demo</a>
+
         </div>
+    </section>
 
-        <div class="feature">
-            <h3>Preschools</h3>
-            <p>A simple management solution for preschools and early learning centres.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Let's Connect</h2>
-    <p class="intro">
-        Interested in School App for your institution?
-        Contact us to learn more about the platform.
-    </p>
-    <a href="mailto:your-email@example.com" class="btn">Email Us</a>
-</section>
+</main>
 
 <footer>
-    <p>© 2026 School App. All Rights Reserved.</p>
+    <h2>School App</h2>
+
     <p>School & Preschool Management Software</p>
+
+    <p>
+        Home |
+        Features |
+        About Us |
+        Pricing |
+        Contact
+    </p>
+
+    <p>© 2026 School App. All Rights Reserved.</p>
 </footer>
 
 </body>
